@@ -1,0 +1,8 @@
+<div class="container" *ngIf="forms$">
+    <div class="container__card" *ngFor="let form of forms$ | async">
+        <h2>{{form.title}}</h2>
+        <div class="container__text">
+            <p>{{form.details}}</p>
+        </div>
+    </div>
+</div>

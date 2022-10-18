@@ -1,0 +1,22 @@
+.home {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    &__form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 33%;
+        height: 100%;
+        padding: 1em;
+        background-color: aliceblue;
+    }
+
+    &__display {
+        overflow: scroll;
+        width: 66%;
+        height: 100%;
+        padding: 1em;
+    }
+}

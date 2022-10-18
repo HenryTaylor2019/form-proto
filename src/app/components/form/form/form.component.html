@@ -1,0 +1,22 @@
+<div class="container">
+    <form [formGroup]="formOne" class="container__form" (ngsubmit)="onSubmit()">
+
+        <div class="container__field">
+            <label class="container--label">Title</label>
+            <input class="container--input" formControlName="title">
+        </div>
+    
+        <div class="container__field">
+            <label class="container--label">Details</label>
+            <textarea class="container--input" formControlName="details"></textarea>
+        </div>
+    
+        <div class="container__btn-container">
+            <button mat-raised-button (click)="onSubmit()">Submit</button>
+        </div>
+    </form>
+
+    <app-upload-file></app-upload-file>
+
+</div>
+
